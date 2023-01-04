@@ -21,6 +21,9 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
+    "@ignite-ui/react": "*",
+    "@ignite-ui/tokens": "*",
+    "@ignite-ui/eslint-config": "*",
     "sb": "start-storybook -p 6006",
     "build-sb": "build-storybook"
   }

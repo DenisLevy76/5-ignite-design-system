@@ -1,12 +1,36 @@
+import { ComponentProps } from 'react'
 import { styled } from './styles'
 
-const Button = styled('button', {
+export const Button = styled('button', {
   fontFamily: '$default',
-  color: '$gray100',
+  color: '$white',
   background: '$ignite500',
-  padding: '$2',
+  borderRadius: '$md',
+  fontWeight: 'bold',
+  border: 0,
+  cursor: 'pointer',
+  transition: 'all 0.15s ease-in-out',
+
+  '&:hover': {
+    background: '$ignite300',
+  },
+
+  variants: {
+    size: {
+      small: {
+        padding: '$2 $3',
+        fontSize: '$sm',
+      },
+      big: {
+        padding: '$3 $4',
+        fontSize: '$md',
+      },
+    },
+  },
+
+  defaultVariants: {
+    size: 'small',
+  },
 })
 
-export const App = () => {
-  return <Button>Hello world</Button>
-}
+export type ButtonProps = ComponentProps<typeof Button>
