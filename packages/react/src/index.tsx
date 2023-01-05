@@ -1,1 +1,2 @@
-export * from './components/Box/index'
+export * from './components/Box'
+export * from './components/Text'
