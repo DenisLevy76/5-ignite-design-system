@@ -3,7 +3,6 @@ import { styled } from '../../styles'
 export const Button = styled('button', {
   all: 'unset',
   borderRadius: '$sm',
-  
 
   color: '$white',
   fontWeight: '$medium',
@@ -34,7 +33,7 @@ export const Button = styled('button', {
 
         '&:disabled': {
           backgroundColor: '$gray200',
-        }
+        },
       },
       outlined: {
         border: '2px solid $ignite500',
@@ -48,8 +47,8 @@ export const Button = styled('button', {
 
         '&:disabled': {
           borderColor: '$gray200',
-          color: '$gray200'
-        }
+          color: '$gray200',
+        },
       },
       text: {
         color: '$gray100',
@@ -60,22 +59,22 @@ export const Button = styled('button', {
 
         '&:disabled': {
           color: '$gray600',
-        }
+        },
       },
     },
     size: {
       sm: {
         padding: '$2 $4',
-     },
-      md: {
-         padding: '$3 $4',
       },
-    }
+      md: {
+        padding: '$3 $4',
+      },
+    },
   },
 
   defaultVariants: {
     variant: 'contained',
-    size: 'md'
+    size: 'md',
   },
 
   '&:not(:disabled):hover': {
@@ -83,8 +82,8 @@ export const Button = styled('button', {
   },
 
   '&:disabled': {
-    cursor: 'not-allowed'
-  }
+    cursor: 'not-allowed',
+  },
 })
 
 Button.displayName = 'Button'

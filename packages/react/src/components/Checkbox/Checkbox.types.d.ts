@@ -1,4 +1,5 @@
-import { ComponentProps } from 'react';
-import { CheckboxContainer } from './Checkbox.styles';
+import { ComponentProps } from 'react'
+import { CheckboxContainer } from './Checkbox.styles'
 
-export interface CheckboxProps extends ComponentProps<typeof CheckboxContainer> { }
+export interface CheckboxProps
+  extends ComponentProps<typeof CheckboxContainer> {}

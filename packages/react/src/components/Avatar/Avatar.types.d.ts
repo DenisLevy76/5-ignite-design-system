@@ -1,4 +1,4 @@
-import { ComponentProps } from 'react';
-import { AvatarImage } from './Avatar.styles';
+import { ComponentProps } from 'react'
+import { AvatarImage } from './Avatar.styles'
 
-export interface AvatarProps extends ComponentProps<typeof AvatarImage> { }
+export interface AvatarProps extends ComponentProps<typeof AvatarImage> {}

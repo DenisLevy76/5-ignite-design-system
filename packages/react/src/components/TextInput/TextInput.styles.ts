@@ -17,7 +17,7 @@ export const TextInputContainer = styled('label', {
   '&:has(input:disabled)': {
     opacity: 0.5,
     cursor: 'not-allowed',
-  }
+  },
 })
 
 export const InputPrefix = styled(Text, {
@@ -42,5 +42,5 @@ export const Input = styled('input', {
 
   '&:placeholder': {
     color: '$gray400',
-  }
+  },
 })
