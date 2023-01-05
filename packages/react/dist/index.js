@@ -37,7 +37,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.tsx
 var src_exports = {};
 __export(src_exports, {
-  Button: () => Button
+  Box: () => Box
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -141,36 +141,14 @@ var {
   }
 });
 
-// src/index.tsx
-var Button = styled("button", {
-  fontFamily: "$default",
-  color: "$white",
-  background: "$ignite500",
+// src/components/Box/Box.component.tsx
+var Box = styled("div", {
+  padding: "$4",
   borderRadius: "$md",
-  fontWeight: "bold",
-  border: 0,
-  cursor: "pointer",
-  transition: "all 0.15s ease-in-out",
-  "&:hover": {
-    background: "$ignite300"
-  },
-  variants: {
-    size: {
-      small: {
-        padding: "$2 $3",
-        fontSize: "$sm"
-      },
-      big: {
-        padding: "$3 $4",
-        fontSize: "$md"
-      }
-    }
-  },
-  defaultVariants: {
-    size: "small"
-  }
+  backgroundColor: "$gray800",
+  border: "1px solid $gray600"
 });
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  Button
+  Box
 });
