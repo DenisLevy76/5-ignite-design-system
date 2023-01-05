@@ -9,6 +9,7 @@ export const TextInputContainer = styled('label', {
   border: '2px solid $gray900',
   display: 'flex',
   alignItems: 'baseline',
+  transition: 'all 0.2s ease-in-out',
 
   '&:focus-within': {
     borderColor: '$ignite300',
