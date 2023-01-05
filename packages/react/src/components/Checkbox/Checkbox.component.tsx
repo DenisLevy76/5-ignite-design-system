@@ -8,3 +8,5 @@ export const Checkbox: React.FC = (props) => {
     </CheckboxIndicator>
   </CheckboxContainer>;
 }
+
+Checkbox.displayName = 'Checkbox'
