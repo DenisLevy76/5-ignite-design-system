@@ -27,13 +27,6 @@ export default {
     ),
     content: <Text>26 de Outubro - Disponível</Text>,
   },
-  decorators: [
-    (Story) => (
-      <>
-        <TooltipContainer>{Story()}</TooltipContainer>
-      </>
-    ),
-  ],
 } as Meta<TooltipProps>
 
 export const Primary: StoryObj<TooltipProps> = {}
