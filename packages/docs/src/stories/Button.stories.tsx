@@ -6,14 +6,17 @@ export default {
   title: 'Form/Button',
   component: Button,
   argTypes: {
-    size: {control: 'radio', options: ['sm', 'md']},
-    variant: {control: 'radio', options: ['contained', 'outlined', 'text']}
+    size: {control: 'inline-radio', options: ['sm', 'md']},
+    variant: {control: 'inline-radio', options: ['contained', 'outlined', 'text']},
+    onclick: {
+      action: 'click'
+    }
   },
   args: {
     variant: 'contained',
     size: 'md',
     disabled: false,
-  }
+  },
 } as Meta<ButtonProps>
 
 export const Contained: StoryObj<ButtonProps> = {

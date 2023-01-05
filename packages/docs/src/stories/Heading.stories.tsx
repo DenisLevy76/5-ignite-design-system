@@ -7,7 +7,11 @@ export default {
   args: {
     children:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quaerat eaque. Distinctio omnis quibusdam similique ab pariatur. Quasi voluptatibus aliquid ratione magni explicabo? Nulla enim expedita culpa vel dignissimos. Illo.',
+    size: 'md',
   },
+  argTypes: {
+    size: {control: 'inline-radio', options: ['sm', 'md', 'lg', '2xl', '4xl', '5xl', '6xl'],},
+  }
 } as Meta<HeadingProps>
 
 export const Title: StoryObj<HeadingProps> = {}
