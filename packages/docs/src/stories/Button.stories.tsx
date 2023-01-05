@@ -1,16 +1,19 @@
 import { Button, ButtonProps } from '@ignite-ui/react'
-import { StoryObj, Meta } from "@storybook/react"
+import { StoryObj, Meta } from '@storybook/react'
 import { Handbag } from 'phosphor-react'
 
 export default {
   title: 'Form/Button',
   component: Button,
   argTypes: {
-    size: {control: 'inline-radio', options: ['sm', 'md']},
-    variant: {control: 'inline-radio', options: ['contained', 'outlined', 'text']},
+    size: { control: 'inline-radio', options: ['sm', 'md'] },
+    variant: {
+      control: 'inline-radio',
+      options: ['contained', 'outlined', 'text'],
+    },
     onclick: {
-      action: 'click'
-    }
+      action: 'click',
+    },
   },
   args: {
     variant: 'contained',
@@ -22,28 +25,28 @@ export default {
 export const Contained: StoryObj<ButtonProps> = {
   args: {
     children: 'Create',
-  }
+  },
 }
 
 export const Outlined: StoryObj<ButtonProps> = {
   args: {
     variant: 'outlined',
     children: 'Remove',
-  }
+  },
 }
 
 export const Text: StoryObj<ButtonProps> = {
   args: {
     variant: 'text',
-    children: 'Cancel'
-  }
+    children: 'Cancel',
+  },
 }
 
 export const Small: StoryObj<ButtonProps> = {
   args: {
     size: 'sm',
     children: 'create',
-  }
+  },
 }
 
 export const WithIcon: StoryObj<ButtonProps> = {
@@ -55,14 +58,13 @@ export const WithIcon: StoryObj<ButtonProps> = {
         <Handbag size={24} weight="bold" />
       </>
     ),
-  }
+  },
 }
-
 
 export const Disabled: StoryObj<ButtonProps> = {
   args: {
     children: 'Create',
     disabled: true,
-    variant: 'contained'
-  }
+    variant: 'contained',
+  },
 }

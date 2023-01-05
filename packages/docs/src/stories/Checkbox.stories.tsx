@@ -6,18 +6,20 @@ export default {
   component: Checkbox,
   args: {
     placeholder: 'Type your name',
-    id: 'input'
+    id: 'input',
   },
   decorators: [
     (Story) => {
       return (
-        <Box  css={{display: 'flex', gap: '$2'}}>
+        <Box css={{ display: 'flex', gap: '$2' }}>
           {Story()}
-          <Text as="label" htmlFor="input">Accept terms of use.</Text>
+          <Text as="label" htmlFor="input">
+            Accept terms of use.
+          </Text>
         </Box>
       )
-    }
-  ]
+    },
+  ],
 } as Meta<CheckboxProps>
 
 export const Default: StoryObj<CheckboxProps> = {}

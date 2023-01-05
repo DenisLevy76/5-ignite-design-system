@@ -20,7 +20,7 @@ export const TokensGrid: React.FC<TokensGridProps> = ({
       </thead>
       <tbody>
         {Object.entries(tokens).map(([key, value]) => (
-          <tr>
+          <tr key={`${key}/${value}`}>
             <td>
               <strong>${key}</strong>
             </td>

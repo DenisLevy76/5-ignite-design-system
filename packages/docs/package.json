@@ -31,6 +31,7 @@
     "@ignite-ui/ts-config": "*",
     "dev": "start-storybook -p 6006",
     "build": "build-storybook",
-    "deploy-sb": "storybook-to-ghpages"
+    "deploy-sb": "storybook-to-ghpages",
+    "lint": "eslint src/**/*.ts* --fix"
   }
 }

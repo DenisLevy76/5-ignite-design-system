@@ -1,5 +1,5 @@
 import { Text, TextProps } from '@ignite-ui/react'
-import { StoryObj, Meta } from "@storybook/react"
+import { StoryObj, Meta } from '@storybook/react'
 
 export default {
   title: 'Typography/Text',
@@ -10,22 +10,25 @@ export default {
     size: 'md',
   },
   argTypes: {
-    size: {control: 'inline-radio', options: [
-      'xxs',
-      'xs',
-      'sm',
-      'md',
-      'lg',
-      'xl',
-      '2xl',
-      '4xl',
-      '5xl',
-      '6xl',
-      '7xl',
-      '8xl',
-      '9xl',
-    ],},
-  }
+    size: {
+      control: 'inline-radio',
+      options: [
+        'xxs',
+        'xs',
+        'sm',
+        'md',
+        'lg',
+        'xl',
+        '2xl',
+        '4xl',
+        '5xl',
+        '6xl',
+        '7xl',
+        '8xl',
+        '9xl',
+      ],
+    },
+  },
 } as Meta<TextProps>
 
 export const Paragraph: StoryObj<TextProps> = {}

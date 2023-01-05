@@ -6,18 +6,20 @@ export default {
   component: TextInput,
   args: {
     placeholder: 'Type your name',
-    id: 'input'
+    id: 'input',
   },
   decorators: [
     (Story) => {
       return (
-        <Box  css={{display: 'flex', flexDirection: 'column', gap: '$2'}}>
-          <Text as="label" htmlFor="input">Type your name</Text>
+        <Box css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}>
+          <Text as="label" htmlFor="input">
+            Type your name
+          </Text>
           {Story()}
         </Box>
       )
-    }
-  ]
+    },
+  ],
 } as Meta<TextInputProps>
 
 export const Default: StoryObj<TextInputProps> = {}
@@ -25,11 +27,11 @@ export const Default: StoryObj<TextInputProps> = {}
 export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
     prefix: 'calc.com/',
-  }
+  },
 }
 
 export const Disabled: StoryObj<TextInputProps> = {
   args: {
     disabled: true,
-  }
+  },
 }
