@@ -22,6 +22,18 @@ var __spreadValues = (a, b) => {
   return a;
 };
 var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+var __objRest = (source, exclude) => {
+  var target = {};
+  for (var prop in source)
+    if (__hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
+      target[prop] = source[prop];
+  if (source != null && __getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(source)) {
+      if (exclude.indexOf(prop) < 0 && __propIsEnum.call(source, prop))
+        target[prop] = source[prop];
+    }
+  return target;
+};
 var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
@@ -47,7 +59,8 @@ __export(src_exports, {
   Box: () => Box,
   Button: () => Button,
   Heading: () => Heading,
-  Text: () => Text
+  Text: () => Text,
+  TextInput: () => TextInput
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -167,12 +180,12 @@ var Text = styled("p", {
   color: "$gray100",
   variants: {
     size: {
-      xxs: { fontSize: "$xxs:" },
-      xs: { fontSize: "$xs:" },
-      sm: { fontSize: "$sm:" },
-      md: { fontSize: "$md:" },
-      lg: { fontSize: "$lg:" },
-      xl: { fontSize: "$xl:" },
+      xxs: { fontSize: "$xxs" },
+      xs: { fontSize: "$xs" },
+      sm: { fontSize: "$sm" },
+      md: { fontSize: "$md" },
+      lg: { fontSize: "$lg" },
+      xl: { fontSize: "$xl" },
       "2xl": { fontSize: "$2xl" },
       "4xl": { fontSize: "$4xl" },
       "5xl": { fontSize: "$5xl" },
@@ -195,10 +208,10 @@ var Heading = styled("h2", {
   color: "$gray100",
   variants: {
     size: {
-      sm: { fontSize: "$xl:" },
-      md: { fontSize: "$2xl:" },
-      lg: { fontSize: "$3xl:" },
-      xl: { fontSize: "$4xl:" },
+      sm: { fontSize: "$xl" },
+      md: { fontSize: "$2xl" },
+      lg: { fontSize: "$3xl" },
+      xl: { fontSize: "$4xl" },
       "2xl": { fontSize: "$5xl" },
       "4xl": { fontSize: "$6xl" },
       "5xl": { fontSize: "$7xl" },
@@ -322,11 +335,61 @@ var Button = styled("button", {
     cursor: "not-allowed"
   }
 });
+
+// src/components/TextInput/TextInput.styles.ts
+var TextInputContainer = styled("label", {
+  backgroundColor: "$gray900",
+  padding: "$3 $4",
+  borderRadius: "$sm",
+  boxSizing: "border-box",
+  border: "2px solid $gray900",
+  display: "flex",
+  alignItems: "baseline",
+  "&:focus-within": {
+    borderColor: "$ignite300"
+  },
+  "&:has(input:disabled)": {
+    opacity: 0.5,
+    cursor: "not-allowed"
+  }
+});
+var InputPrefix = styled(Text, {
+  color: "$gray400"
+});
+var Input = styled("input", {
+  fontFamily: "$default",
+  fontSize: "$sm",
+  color: "$white",
+  fontWeight: "$regular",
+  background: "transparent",
+  width: "100%",
+  border: 0,
+  "&:focus": {
+    outline: 0
+  },
+  "&:disabled": {
+    cursor: "inherit"
+  },
+  "&:placeholder": {
+    color: "$gray400"
+  }
+});
+
+// src/components/TextInput/TextInput.component.tsx
+var import_jsx_runtime2 = require("react/jsx-runtime");
+var TextInput = (_a) => {
+  var _b = _a, { prefix } = _b, props = __objRest(_b, ["prefix"]);
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(TextInputContainer, { children: [
+    !!prefix && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(InputPrefix, { as: "span", size: "sm", children: prefix }),
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Input, __spreadValues({ type: "text" }, props))
+  ] });
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
   Box,
   Button,
   Heading,
-  Text
+  Text,
+  TextInput
 });
