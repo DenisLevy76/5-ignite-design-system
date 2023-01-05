@@ -13,7 +13,7 @@ export default {
       return (
         <Box  css={{display: 'flex', flexDirection: 'column', gap: '$2'}}>
           <Text as="label" htmlFor="input">Type your name</Text>
-          <Story />
+          {Story()}
         </Box>
       )
     }

@@ -13,7 +13,7 @@ export default {
       return (
         <Box  css={{display: 'flex', flexDirection: 'column', gap: '$2'}}>
           <Text as="label" htmlFor="textarea">Observations</Text>
-          <Story />
+          {Story()}
         </Box>
       )
     }

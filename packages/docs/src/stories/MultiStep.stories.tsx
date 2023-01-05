@@ -12,14 +12,16 @@ export default {
     (Story) => {
       return (
         <Box >
-          <Story />
+          {Story()}
         </Box>
       )
     }
   ]
 } as Meta<MultiStepProps>
 
-export const FirstStep: StoryObj<MultiStepProps> = {}
+export const FirstStep: StoryObj<MultiStepProps> = {
+  decorators: []
+}
 export const Complete: StoryObj<MultiStepProps> = {
   args: {
     numberOfSteps: 4,

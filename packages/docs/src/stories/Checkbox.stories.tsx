@@ -12,7 +12,7 @@ export default {
     (Story) => {
       return (
         <Box  css={{display: 'flex', gap: '$2'}}>
-          <Story />
+          {Story()}
           <Text as="label" htmlFor="input">Accept terms of use.</Text>
         </Box>
       )
