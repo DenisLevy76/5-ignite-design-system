@@ -26,7 +26,7 @@
     "@ignite-ui/tokens": "*",
     "@ignite-ui/eslint-config": "*",
     "@ignite-ui/ts-config": "*",
-    "sb": "start-storybook -p 6006",
-    "build-sb": "build-storybook"
+    "dev": "start-storybook -p 6006",
+    "build": "build-storybook"
   }
 }
