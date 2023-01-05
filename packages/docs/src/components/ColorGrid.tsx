@@ -7,7 +7,12 @@ export const ColorsGrid: React.FC = () => {
       {Object.entries(colors).map(([key, color]) => (
         <div
           key={key}
-          style={{ background: color, padding: '2rem', marginTop: '0.5rem' }}
+          style={{
+            background: color,
+            padding: '2rem',
+            marginTop: '0.5rem',
+            borderRadius: 8,
+          }}
         >
           <div
             style={{
