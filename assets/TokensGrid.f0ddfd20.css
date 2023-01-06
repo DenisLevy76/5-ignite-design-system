@@ -1,0 +1,1 @@
+table{width:100%;font-size:1.125rem}tr{color:#fff}th,td{text-align:left;padding:.75rem 1rem}td{color:#ccc}td>strong{color:#fff}td:first-child{border-top-left-radius:8px;border-bottom-left-radius:8px}td:last-child{border-top-right-radius:8px;border-bottom-right-radius:8px}tr:nth-child(even)>td{background:#444}

@@ -1,0 +1,2 @@
+import{A as t}from"./index.ae0fc91a.js";import"./index.cb7b7662.js";import"./iframe.1d354ad9.js";import"./index.276d2b9d.js";import"./jsx-runtime.3d05c289.js";const c={title:"Data display/Avatar",component:t,args:{src:"https://github.com/DenisLevy76.png"},argTypes:{src:{control:"text"}}},p={},e={args:{src:void 0}},m=["Primary","WithFallback"];export{p as Primary,e as WithFallback,m as __namedExportsOrder,c as default};
+//# sourceMappingURL=Avatar.stories.a2d68408.js.map
