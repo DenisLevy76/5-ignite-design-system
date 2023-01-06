@@ -23,6 +23,7 @@ export const {
     ...defaultThemeMap,
     height: 'space',
     width: 'space',
+    boxShadow: 'colors',
   },
 
   theme: {

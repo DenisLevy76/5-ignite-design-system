@@ -94,6 +94,7 @@ export const ToastClose = styled(Toast.Close, {
   gridArea: 'close',
 
   '&:focus': {
-    boxShadow: '0 0 0 2px $ignite500',
+    boxShadow: '0px 0px 0px 2px $ignite500',
+    borderRadius: '$px',
   },
 })
