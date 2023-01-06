@@ -5,7 +5,10 @@ import { useRef, useState } from 'react'
 export default {
   title: 'Data display/Toast',
   component: Toast,
-  args: {},
+  args: {
+    title: 'Agendamento realizado',
+    description: 'Quarta-feira, 23 de Outubro às 16h',
+  },
   decorators: [
     (Story) => {
       const [open, setOpen] = useState<boolean>(false)

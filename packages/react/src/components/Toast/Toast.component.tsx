@@ -10,17 +10,17 @@ import { X } from 'phosphor-react'
 import { Text } from '../Text'
 import { Heading } from '../Heading'
 
-export const Toast: React.FC<ToastProps> = ({ ...props }) => {
+export const Toast: React.FC<ToastProps> = ({ title, description, ...props }) => {
   return (
     <RadixToast.Provider>
       <ToastContainer {...props}>
         <RadixToast.Title asChild>
           <Heading as="h4" size="sm">
-            Agendamento realizado
+            {title}
           </Heading>
         </RadixToast.Title>
         <ToastDescription asChild>
-          <Text>Quarta-feira, 23 de Outubro às 16h</Text>
+          <Text>{description}</Text>
         </ToastDescription>
         <ToastClose aria-label="Close">
           <X size={20} />
